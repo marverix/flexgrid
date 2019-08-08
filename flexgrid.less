@@ -1,0 +1,28 @@
+.loop (@total, @columns) when (@columns > 0) {
+    .loop(@total, @columns - 1);
+
+    .fg-@{columns} {
+        width: calc(@columns * 100% / @total);
+    }
+}
+
+.flexgrid (@columns: 16, @rows: 9) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+
+    & > * {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 100%;
+    }
+}
+
+.fg {
+    .flexgrid(16);
+    .loop(16, 16);
+}

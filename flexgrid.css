@@ -1,0 +1,62 @@
+.fg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
+}
+.fg > * {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100%;
+}
+.fg .fg-1 {
+  width: calc(1 * 100% / 16);
+}
+.fg .fg-2 {
+  width: calc(2 * 100% / 16);
+}
+.fg .fg-3 {
+  width: calc(3 * 100% / 16);
+}
+.fg .fg-4 {
+  width: calc(4 * 100% / 16);
+}
+.fg .fg-5 {
+  width: calc(5 * 100% / 16);
+}
+.fg .fg-6 {
+  width: calc(6 * 100% / 16);
+}
+.fg .fg-7 {
+  width: calc(7 * 100% / 16);
+}
+.fg .fg-8 {
+  width: calc(8 * 100% / 16);
+}
+.fg .fg-9 {
+  width: calc(9 * 100% / 16);
+}
+.fg .fg-10 {
+  width: calc(10 * 100% / 16);
+}
+.fg .fg-11 {
+  width: calc(11 * 100% / 16);
+}
+.fg .fg-12 {
+  width: calc(12 * 100% / 16);
+}
+.fg .fg-13 {
+  width: calc(13 * 100% / 16);
+}
+.fg .fg-14 {
+  width: calc(14 * 100% / 16);
+}
+.fg .fg-15 {
+  width: calc(15 * 100% / 16);
+}
+.fg .fg-16 {
+  width: calc(16 * 100% / 16);
+}

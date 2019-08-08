@@ -1,0 +1,21 @@
+{
+  "name": "flexgrid",
+  "version": "0.1.0-alpha1",
+  "description": "flexbox-based grid system for older browsers",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx lessc flexgrid.less flexgrid.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grid",
+    "less",
+    "css"
+  ],
+  "author": "Marek Sierociński <mareksierocinski@gmail.com>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "less": "^3.9.0"
+  }
+}
