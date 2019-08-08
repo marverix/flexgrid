@@ -1,9 +1,22 @@
-.fg-loop (@columnsTotal, @columns, @gap) when (@columns > 0) {
-  .fg-loop(@columnsTotal, @columns - 1, @gap);
+.fg-iteration (@letter, @key, @total, @i, @gap) when (@i > 0) {
+  .fg-iteration(@letter, @key, @total, @i - 1, @gap);
 
-  .fg-@{columns} {
-    width: if((@gap > 0),
-      calc(~'(100% * @{columns} / @{columnsTotal}) - @{gap}'),
-      @columns * 100% / @columnsTotal );
+  .fg-@{letter}-@{i} {
+    @{key}: if((@gap > 0),
+      calc(~'(100% * @{i} / @{total}) - @{gap}'),
+      100% * @i / @total );
   }
+}
+
+.fg-loop-w (@columns, @gap) {
+  .fg-iteration(w, width, @columns, @columns, @gap);
+}
+
+.fg-loop-h (@rows, @gap) {
+  .fg-iteration(h, height, @rows, @rows, @gap);
+}
+
+.fg-loop (@columns, @rows, @gap) {
+  .fg-loop-w(@columns, @gap);
+  .fg-loop-h(@rows, @gap);
 }

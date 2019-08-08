@@ -1,7 +1,13 @@
+/**
+ * flexgrid v0.1.0
+ * @copyright (c) 2019 Marek Sierociński
+ * @license ISC
+ * @see https://github.com/marverix/flexgrid
+ */
 .fg {
   width: 100%;
   height: 100%;
-  padding: 0x;
+  padding: 0;
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
@@ -26,53 +32,81 @@
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
   width: 100%;
-  margin: 0x;
+  height: auto;
+  margin: 0;
 }
-.fg .fg-1 {
+.fg .fg-w-1 {
   width: 6.25%;
 }
-.fg .fg-2 {
+.fg .fg-w-2 {
   width: 12.5%;
 }
-.fg .fg-3 {
+.fg .fg-w-3 {
   width: 18.75%;
 }
-.fg .fg-4 {
+.fg .fg-w-4 {
   width: 25%;
 }
-.fg .fg-5 {
+.fg .fg-w-5 {
   width: 31.25%;
 }
-.fg .fg-6 {
+.fg .fg-w-6 {
   width: 37.5%;
 }
-.fg .fg-7 {
+.fg .fg-w-7 {
   width: 43.75%;
 }
-.fg .fg-8 {
+.fg .fg-w-8 {
   width: 50%;
 }
-.fg .fg-9 {
+.fg .fg-w-9 {
   width: 56.25%;
 }
-.fg .fg-10 {
+.fg .fg-w-10 {
   width: 62.5%;
 }
-.fg .fg-11 {
+.fg .fg-w-11 {
   width: 68.75%;
 }
-.fg .fg-12 {
+.fg .fg-w-12 {
   width: 75%;
 }
-.fg .fg-13 {
+.fg .fg-w-13 {
   width: 81.25%;
 }
-.fg .fg-14 {
+.fg .fg-w-14 {
   width: 87.5%;
 }
-.fg .fg-15 {
+.fg .fg-w-15 {
   width: 93.75%;
 }
-.fg .fg-16 {
+.fg .fg-w-16 {
   width: 100%;
+}
+.fg .fg-h-1 {
+  height: 11.11111111%;
+}
+.fg .fg-h-2 {
+  height: 22.22222222%;
+}
+.fg .fg-h-3 {
+  height: 33.33333333%;
+}
+.fg .fg-h-4 {
+  height: 44.44444444%;
+}
+.fg .fg-h-5 {
+  height: 55.55555556%;
+}
+.fg .fg-h-6 {
+  height: 66.66666667%;
+}
+.fg .fg-h-7 {
+  height: 77.77777778%;
+}
+.fg .fg-h-8 {
+  height: 88.88888889%;
+}
+.fg .fg-h-9 {
+  height: 100%;
 }

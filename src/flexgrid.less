@@ -1,3 +1,10 @@
+/**
+ * flexgrid v0.1.0
+ * @copyright (c) 2019 Marek Sierociński
+ * @license ISC
+ * @see https://github.com/marverix/flexgrid
+ */
+
 @import 'flex.less';
 @import 'loops.less';
 
@@ -22,9 +29,10 @@
       .flex-grow(0);
       .flex-shrink(0);
       width: 100%;
+      height: auto;
       margin: @halfGap;
     }
 
-    .fg-loop(@columns, @columns, @gap);
+    .fg-loop(@columns, @rows, @gap);
   }
 }
