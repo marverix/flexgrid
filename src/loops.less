@@ -1,0 +1,9 @@
+.fg-loop (@columnsTotal, @columns, @gap) when (@columns > 0) {
+  .fg-loop(@columnsTotal, @columns - 1, @gap);
+
+  .fg-@{columns} {
+    width: if((@gap > 0),
+      calc(~'(100% * @{columns} / @{columnsTotal}) - @{gap}'),
+      @columns * 100% / @columnsTotal );
+  }
+}

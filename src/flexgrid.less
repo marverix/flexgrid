@@ -1,0 +1,30 @@
+@import 'flex.less';
+@import 'loops.less';
+
+.flexgrid (@columns: 16, @rows: 9, @gap: 0) {
+  @halfGap: @gap / 2;
+
+  .fg {
+    width: if((@gap > 0),
+      calc(~'100% - @{gap}'),
+      100%);
+    height: if((@gap > 0),
+      calc(~'100% - @{gap}'),
+      100%);
+    padding: @halfGap;
+    .display-flex;
+    .flex-direction(row);
+    .flex-wrap(wrap);
+    .align-items(stretch);
+    .align-content(stretch);
+
+    & > * {
+      .flex-grow(0);
+      .flex-shrink(0);
+      width: 100%;
+      margin: @halfGap;
+    }
+
+    .fg-loop(@columns, @columns, @gap);
+  }
+}

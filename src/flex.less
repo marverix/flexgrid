@@ -1,0 +1,55 @@
+.display-flex() {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.prefixed-rule(@name, @val) {
+  -ms-@{name}: @val;
+  -webkit-@{name}: @val;
+  @{name}: @val;
+}
+
+.flex(@val) {
+  .prefixed-rule(flex, @val);
+}
+
+.flex-grow(@val) {
+  .prefixed-rule(flex-grow, @val);
+}
+
+.flex-shrink(@val) {
+  .prefixed-rule(flex-shrink, @val);
+}
+
+.flex-basis(@val) {
+  .prefixed-rule(flex-basis, @val);
+}
+
+.flex-wrap(@val) {
+  .prefixed-rule(flex-wrap, @val);
+}
+
+.flex-direction(@val) {
+  .prefixed-rule(flex-direction, @val);
+}
+
+.flex-flow(@val) {
+  .prefixed-rule(flex-flow, @val);
+}
+
+.justify-content(@val) {
+  .prefixed-rule(justify-content, @val);
+}
+
+.align-items(@val) {
+  .prefixed-rule(align-items, @val);
+}
+
+.align-content(@val) {
+  .prefixed-rule(align-content, @val);
+}
+
+.align-self(@val) {
+  .prefixed-rule(align-self, @val);
+}
