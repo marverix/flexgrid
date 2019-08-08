@@ -1,4 +1,4 @@
-# flexgrid
+# flexgrid.less
 
 flexbox-based grid system for older browsers.
 
@@ -10,7 +10,7 @@ Use `Issues` tab to share your ideas etc!
 ## Usage
 
 ```sh
-npm install flexgrid
+npm install flexgrid.less
 ```
 
 Import in project and use classes.
@@ -84,7 +84,7 @@ npx lessc --modify-var='c=4' \
 
 ### Within LESS file
 
-1. Install (`npm install flexgrid`)
+1. Install
 1. Import in LESS:
 
 ```less

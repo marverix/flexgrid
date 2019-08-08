@@ -1,5 +1,5 @@
 {
-  "name": "flexgrid",
+  "name": "flexgrid.less",
   "version": "0.1.0",
   "description": "flexbox-based grid system for older browsers",
   "main": "src/flexgrid.less",
