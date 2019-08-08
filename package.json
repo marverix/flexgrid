@@ -2,7 +2,7 @@
   "name": "flexgrid",
   "version": "0.1.0",
   "description": "flexbox-based grid system for older browsers",
-  "main": "dist/fg.css",
+  "main": "src/flexgrid.less",
   "scripts": {
     "build": "npx lessc --modify-var='c=16' --modify-var='r=9' --modify-var='g=0x' src/fg.less dist/fg.css",
     "test": "echo \"Error: no test specified\" && exit 1"
